@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:wght@700&family=Lato:wght@700;900&family=Montserrat:wght@400;500&display=swap');
+@import "tailwindcss";
+
+:root {
+  font-family: "Montserrat", sans-serif;
+  color: #4f4e4e;
+  background: #ffffff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #ffffff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.font-montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+.font-lato {
+  font-family: "Lato", sans-serif;
+}
+
+.font-arsenal {
+  font-family: "Arsenal", serif;
+}
+
+.marquee-text {
+  animation: drift 28s linear infinite;
+}
+
+@keyframes drift {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(-30%, 0, 0);
+  }
+}
