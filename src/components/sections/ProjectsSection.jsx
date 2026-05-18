@@ -3,27 +3,27 @@ export function ProjectsSection() {
   const projects = [
     {
       title: 'Garde-corps moderne',
-      image: '/images/pic1.jpeg',
+      image: '/images/IMG_5890.JPG.jpeg',
     },
     {
       title: 'Escalier inox',
-      image: '/images/pic2.jpeg',
+      image: '/images/IMG_5898.JPG.jpeg',
     },
     {
       title: 'Cuisine professionnelle',
-      image: '/images/pic3.jpeg',
+      image: '/images/IMG_5899.JPG.jpeg',
     },
     {
       title: 'Porte inox design',
-      image: '/images/pic4.jpeg',
+      image: '/images/IMG_5515.JPG.jpeg',
     },
     {
       title: 'Structure extérieure',
-      image: '/images/pic5.jpeg',
+      image: '/images/IMG_5890.JPG.jpeg',
     },
     {
       title: 'Fenêtres inox',
-      image: '/images/pic6.jpeg',
+      image: '/images/IMG_5898.JPG.jpeg',
     },
   ]
 
