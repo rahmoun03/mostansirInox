@@ -53,7 +53,7 @@ function InfoBlock({ title, lines, accent = false, isEmail = false }) {
   )
 }
 
-export function ContactPage() {
+export default function ContactPage() {
   return (
     <main className="bg-stone-50 text-stone-900">
 

@@ -17,48 +17,42 @@ const projects = [
     category: 'Escaliers',
     title: 'Escalier Inox Moderne',
     location: 'Casablanca',
-    image:
-      'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop',
+    image: '/images/IMG_1589.JPG.jpeg',
   },
   {
     id: 2,
     category: 'Cuisine',
     title: 'Cuisine Professionnelle Inox',
     location: 'Marrakech',
-    image:
-      'https://images.unsplash.com/photo-1556911220-bff31c812dba?q=80&w=1200&auto=format&fit=crop',
+    image: '/images/IMG_5344.JPG.jpeg',
   },
   {
     id: 3,
     category: 'Garde-Corps',
     title: 'Garde-Corps Terrasse',
     location: 'Rabat',
-    image:
-      'https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1200&auto=format&fit=crop',
+    image: '/images/IMG_5347.JPG.jpeg',
   },
   {
     id: 4,
     category: 'Portails',
     title: 'Portail Inox Premium',
     location: 'Tanger',
-    image:
-      'https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1200&auto=format&fit=crop',
+    image: '/images/IMG_5515.JPG.jpeg',
   },
   {
     id: 5,
     category: 'Structures',
     title: 'Structure Métallique Moderne',
     location: 'Agadir',
-    image:
-      'https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200&auto=format&fit=crop',
+    image: '/images/IMG_5899.JPG.jpeg',
   },
   {
     id: 6,
     category: 'Escaliers',
     title: 'Escalier Suspendu Inox',
     location: 'Casablanca',
-    image:
-      'https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=1200&auto=format&fit=crop',
+    image: '/images/IMG_5898.JPG.jpeg',
   },
 ]
 
@@ -92,7 +86,7 @@ export default function RealisationsPage() {
         <div className="absolute inset-0 z-10 bg-black/65" />
 
         <img
-          src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1920&auto=format&fit=crop"
+          src="/images/IMG_5890.JPG.jpeg"
           alt=""
           className="h-[72vh] w-full object-cover"
         />
@@ -237,7 +231,7 @@ export default function RealisationsPage() {
             viewport={{ once: true }}
           >
             <img
-              src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1400&auto=format&fit=crop"
+              src="/images/IMG_5909.JPG.jpeg"
               alt=""
               className="h-[620px] w-full rounded-[36px] object-cover shadow-2xl"
             />
