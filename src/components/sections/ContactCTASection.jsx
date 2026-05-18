@@ -12,7 +12,7 @@ export function ContactCTASection() {
     <section className="relative overflow-hidden bg-[#0f0f0f] py-24">
 
       {/* 🔥 Background glow */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(235,102,8,0.25),transparent_40%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(253,107,1,0.25),transparent_40%)]" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_80%,rgba(37,211,102,0.15),transparent_40%)]" />
 
       {/* ✨ Grid texture (optional) */}
@@ -66,7 +66,7 @@ export function ContactCTASection() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.97 }}
             href="tel:+212680492169"
-            className="inline-flex items-center gap-2 rounded-full border border-white/30 px-7 py-3.5 text-sm font-semibold text-white transition hover:border-[#eb6608] hover:text-[#eb6608]"
+            className="inline-flex items-center gap-2 rounded-full border border-white/30 px-7 py-3.5 text-sm font-semibold text-white transition hover:border-pumpkin-spice hover:text-pumpkin-spice"
           >
             <IoMdCall size={32} /> Appeler
           </motion.a>

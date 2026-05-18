@@ -1,8 +1,8 @@
 import { createBrowserRouter } from 'react-router-dom'
 import { AppLayout } from '../components/layout/AppLayout'
-import { HomePage } from '../pages/HomePage'
-import { ContentPage } from '../pages/ContentPage'
-import { NotFoundPage } from '../pages/NotFoundPage'
+import HomePage from '../pages/HomePage'
+import ContentPage from '../pages/ContentPage'
+import NotFoundPage from '../pages/NotFoundPage'
 
 import ContactPage from '../pages/ContactPage'
 import ServicesPage  from '../pages/ServicesPage'

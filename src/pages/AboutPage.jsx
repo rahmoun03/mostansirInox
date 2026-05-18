@@ -80,7 +80,7 @@ export default function AboutPage() {
               transition={{ duration: 0.9 }}
               className="max-w-3xl"
             >
-              <p className="font-montserrat text-sm font-semibold uppercase tracking-[0.3em] text-[#eb6608]">
+              <p className="font-montserrat text-sm font-semibold uppercase tracking-[0.3em] text-[pumpkin-spice]">
                 À PROPOS DE NOUS
               </p>
 
@@ -108,7 +108,7 @@ export default function AboutPage() {
             whileInView="visible"
             viewport={{ once: true }}
           >
-            <p className="font-montserrat text-sm font-semibold uppercase tracking-[0.24em] text-[#eb6608]">
+            <p className="font-montserrat text-sm font-semibold uppercase tracking-[0.24em] text-[pumpkin-spice]">
               NOTRE HISTOIRE
             </p>
 
@@ -164,7 +164,7 @@ export default function AboutPage() {
             viewport={{ once: true }}
             className="max-w-3xl"
           >
-            <p className="font-montserrat text-sm font-semibold uppercase tracking-[0.24em] text-[#eb6608]">
+            <p className="font-montserrat text-sm font-semibold uppercase tracking-[0.24em] text-[pumpkin-spice]">
               NOS VALEURS
             </p>
 
@@ -185,7 +185,7 @@ export default function AboutPage() {
                 whileHover={{ y: -8 }}
                 className="rounded-[30px] bg-white p-8 shadow-[0_20px_60px_rgba(0,0,0,0.06)]"
               >
-                <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-[#eb6608]/10 text-2xl text-[#eb6608]">
+                <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-[pumpkin-spice]/10 text-2xl text-[pumpkin-spice]">
                   ✦
                 </div>
 
@@ -217,7 +217,7 @@ export default function AboutPage() {
             viewport={{ once: true }}
             className="text-center"
           >
-            <p className="font-montserrat text-sm font-semibold uppercase tracking-[0.24em] text-[#eb6608]">
+            <p className="font-montserrat text-sm font-semibold uppercase tracking-[0.24em] text-[pumpkin-spice]">
               NOS CHIFFRES
             </p>
 
@@ -237,7 +237,7 @@ export default function AboutPage() {
                 transition={{ delay: index * 0.1 }}
                 className="rounded-[30px] border border-white/10 bg-white/5 p-8 text-center backdrop-blur"
               >
-                <p className="font-lato text-5xl font-black text-[#eb6608]">
+                <p className="font-lato text-5xl font-black text-[pumpkin-spice]">
                   {stat.number}
                 </p>
 
@@ -274,7 +274,7 @@ export default function AboutPage() {
             whileInView="visible"
             viewport={{ once: true }}
           >
-            <p className="font-montserrat text-sm font-semibold uppercase tracking-[0.24em] text-[#eb6608]">
+            <p className="font-montserrat text-sm font-semibold uppercase tracking-[0.24em] text-[pumpkin-spice]">
               NOTRE ATELIER
             </p>
 
@@ -299,7 +299,7 @@ export default function AboutPage() {
                   key={item}
                   className="flex items-center gap-3 rounded-2xl border border-stone-200 p-4"
                 >
-                  <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#eb6608]/10 text-[#eb6608]">
+                  <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[pumpkin-spice]/10 text-[pumpkin-spice]">
                     ✓
                   </span>
 
@@ -328,7 +328,7 @@ export default function AboutPage() {
             whileInView="visible"
             viewport={{ once: true }}
           >
-            <p className="font-montserrat text-sm font-semibold uppercase tracking-[0.24em] text-[#eb6608]">
+            <p className="font-montserrat text-sm font-semibold uppercase tracking-[0.24em] text-[pumpkin-spice]">
               COMMENCEZ VOTRE PROJET
             </p>
 
@@ -347,14 +347,14 @@ export default function AboutPage() {
                 href="https://wa.me/212680492169"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex h-14 items-center justify-center rounded-full bg-[#eb6608] px-8 font-montserrat text-sm font-semibold uppercase tracking-[0.14em] text-white transition duration-300 hover:scale-[1.03] hover:bg-[#c75500]"
+                className="inline-flex h-14 items-center justify-center rounded-full bg-[pumpkin-spice] px-8 font-montserrat text-sm font-semibold uppercase tracking-[0.14em] text-white transition duration-300 hover:scale-[1.03] hover:bg-[pumpkin-dark]"
               >
                 WhatsApp
               </a>
 
               <Link
                 to="/contact"
-                className="inline-flex h-14 items-center justify-center rounded-full border border-stone-300 px-8 font-montserrat text-sm font-semibold uppercase tracking-[0.14em] text-stone-900 transition duration-300 hover:border-[#eb6608] hover:bg-[#eb6608] hover:text-white"
+                className="inline-flex h-14 items-center justify-center rounded-full border border-stone-300 px-8 font-montserrat text-sm font-semibold uppercase tracking-[0.14em] text-stone-900 transition duration-300 hover:border-[pumpkin-spice] hover:bg-[pumpkin-spice] hover:text-white"
               >
                 Demander Un Devis
               </Link>

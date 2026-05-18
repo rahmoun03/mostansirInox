@@ -11,15 +11,15 @@ const formFields = [
 function ContactInput({ field }) {
   return (
     <label className="block group">
-      <span className="font-montserrat text-sm font-medium text-stone-800 sm:text-base">
-        {field.label} <span className="text-[#eb6608]">*</span>
+      <span className="font-montserrat text-sm font-medium text-charcoal-blue sm:text-base">
+        {field.label} <span className="text-[pumpkin-spice]">*</span>
       </span>
 
       <input
         type={field.type}
         name={field.name}
         placeholder={field.placeholder}
-        className="mt-2 h-[52px] w-full rounded-2xl border border-stone-200 bg-white px-5 font-montserrat text-sm text-stone-700 outline-none transition duration-300 placeholder:text-stone-400 focus:border-[#eb6608] focus:ring-4 focus:ring-[#eb6608]/10 hover:border-stone-300"
+        className="mt-2 h-[52px] w-full rounded-2xl border border-pale-slate/20 bg-white px-5 font-montserrat text-sm text-charcoal-blue outline-none transition duration-300 placeholder:text-pale-slate/50 focus:border-pumpkin-spice focus:ring-4 focus:ring-pumpkin-spice/10 hover:border-stone-300"
       />
     </label>
   )
@@ -33,14 +33,14 @@ function InfoBlock({ title, lines, accent = false, isEmail = false }) {
       </h3>
 
       <div className={`mt-3 space-y-1 font-montserrat text-sm leading-7 sm:text-base ${
-        accent ? 'text-[#eb6608]' : 'text-stone-600'
+        accent ? 'text-[pumpkin-spice]' : 'text-pale-slate/70'
       }`}>
         {lines.map((line) =>
           isEmail ? (
             <a
               key={line}
               href={`mailto:${line}`}
-              className="block transition hover:text-[#c75500]"
+              className="block transition hover:text-[pumpkin-dark]"
             >
               {line}
             </a>
@@ -53,9 +53,9 @@ function InfoBlock({ title, lines, accent = false, isEmail = false }) {
   )
 }
 
-export function ContactPage() {
+export default function ContactPage() {
   return (
-    <main className="bg-stone-50 text-stone-900">
+    <main className="bg-jet-black text-white">
 
       {/* HERO */}
       <section className="relative isolate overflow-hidden">
@@ -89,10 +89,10 @@ export function ContactPage() {
         <div className="mx-auto max-w-6xl">
 
           {/* breadcrumb */}
-          <nav className="flex items-center gap-2 text-sm font-medium text-stone-500">
-            <Link to="/" className="hover:text-[#eb6608]">Home</Link>
+          <nav className="flex items-center gap-2 text-sm font-medium text-taupe">
+            <Link to="/" className="hover:text-[pumpkin-spice]">Home</Link>
             <span>›</span>
-            <span className="text-[#eb6608]">{contactPageContent.title}</span>
+            <span className="text-[pumpkin-spice]">{contactPageContent.title}</span>
           </nav>
 
           <h2 className="mt-4 font-arsenal text-4xl font-bold uppercase sm:text-5xl">
@@ -103,9 +103,9 @@ export function ContactPage() {
           <div className="mt-10 grid gap-10 lg:grid-cols-[2fr_1fr]">
 
             {/* FORM */}
-            <div className="rounded-3xl border border-stone-200 bg-white p-6 shadow-[0_20px_60px_rgba(0,0,0,0.05)] sm:p-10">
+            <div className="rounded-3xl border border-pale-slate/20 bg-white p-6 shadow-[0_20px_60px_rgba(0,0,0,0.05)] sm:p-10">
 
-              <h3 className="mb-8 font-montserrat text-sm font-semibold uppercase tracking-[0.2em] text-[#eb6608]">
+              <h3 className="mb-8 font-montserrat text-sm font-semibold uppercase tracking-[0.2em] text-[pumpkin-spice]">
                 Demande de devis
               </h3>
 
@@ -119,32 +119,32 @@ export function ContactPage() {
 
                 <div>
                   <label className="block">
-                    <span className="font-montserrat text-sm font-medium text-stone-800">
-                      Subject <span className="text-[#eb6608]">*</span>
+                    <span className="font-montserrat text-sm font-medium text-charcoal-blue">
+                      Subject <span className="text-[pumpkin-spice]">*</span>
                     </span>
 
                     <input
-                      className="mt-2 h-[52px] w-full rounded-2xl border border-stone-200 px-5 outline-none transition focus:border-[#eb6608] focus:ring-4 focus:ring-[#eb6608]/10"
+                      className="mt-2 h-[52px] w-full rounded-2xl border border-pale-slate/20 px-5 outline-none transition focus:border-pumpkin-spice focus:ring-4 focus:ring-pumpkin-spice/10"
                     />
                   </label>
                 </div>
 
                 <div>
                   <label className="block">
-                    <span className="font-montserrat text-sm font-medium text-stone-800">
-                      Message <span className="text-[#eb6608]">*</span>
+                    <span className="font-montserrat text-sm font-medium text-charcoal-blue">
+                      Message <span className="text-[pumpkin-spice]">*</span>
                     </span>
 
                     <textarea
                       rows="6"
-                      className="mt-2 w-full rounded-2xl border border-stone-200 px-5 py-4 outline-none transition focus:border-[#eb6608] focus:ring-4 focus:ring-[#eb6608]/10"
+                      className="mt-2 w-full rounded-2xl border border-pale-slate/20 px-5 py-4 outline-none transition focus:border-pumpkin-spice focus:ring-4 focus:ring-pumpkin-spice/10"
                     />
                   </label>
                 </div>
 
                 <button
                   type="button"
-                  className="inline-flex h-[52px] items-center justify-center rounded-full bg-[#eb6608] px-10 font-montserrat text-sm font-semibold uppercase tracking-[0.14em] text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-[#c75500]"
+                  className="inline-flex h-[52px] items-center justify-center rounded-full bg-[pumpkin-spice] px-10 font-montserrat text-sm font-semibold uppercase tracking-[0.14em] text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-[pumpkin-dark]"
                 >
                   Send Request
                 </button>
@@ -153,7 +153,7 @@ export function ContactPage() {
             </div>
 
             {/* INFO SIDE */}
-            <div className="space-y-6 rounded-3xl border border-stone-200 bg-gradient-to-b from-white to-stone-50 p-6 sm:p-8">
+            <div className="space-y-6 rounded-3xl border border-pale-slate/20 bg-gradient-to-b from-charcoal-blue to-jet-black p-6 sm:p-8">
 
               <h3 className="font-arsenal text-2xl font-bold uppercase">
                 {contactPageContent.companyName}
@@ -180,7 +180,7 @@ export function ContactPage() {
                 href={contactPageContent.mapLink}
                 target="_blank"
                 rel="noreferrer"
-                className="mt-6 inline-flex w-full items-center justify-center rounded-full border border-stone-200 bg-white py-3 font-montserrat text-sm font-medium transition hover:border-[#eb6608] hover:text-[#eb6608]"
+                className="mt-6 inline-flex w-full items-center justify-center rounded-full border border-pale-slate/20 bg-white py-3 font-montserrat text-sm font-medium transition hover:border-[pumpkin-spice] hover:text-[pumpkin-spice]"
               >
                 Open in Google Maps
               </a>

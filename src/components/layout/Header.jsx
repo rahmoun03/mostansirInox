@@ -57,27 +57,27 @@ export function Header() {
 		return () => window.removeEventListener('click', handleClickOutside)
 	}, [isMenuOpen])
 
-	const desktopNavTone = isScrolled ? 'text-stone-700' : isBannerPage ? 'text-white' : 'text-stone-700'
+	const desktopNavTone = isScrolled ? 'text-charcoal-blue' : isBannerPage ? 'text-white' : 'text-charcoal-blue'
 	const mobileButtonTone = isScrolled
-		? 'border-stone-200 bg-white text-stone-800 hover:bg-stone-50'
+		? 'border-pale-slate bg-white text-charcoal-blue hover:bg-charcoal-blue/80'
 		: isBannerPage
 		? 'border-white/20 bg-black/20 text-white hover:bg-black/30'
-		: 'border-stone-200 bg-white text-stone-800 hover:bg-stone-50'
+		: 'border-pale-slate bg-white text-charcoal-blue hover:bg-charcoal-blue/80'
 	const primaryCtaTone = isScrolled
-		? 'border-[#eb6608] bg-[#eb6608] text-white hover:bg-[#c75500] hover:border-[#c75500]'
+		? 'border-pumpkin-spice bg-pumpkin-spice text-white hover:bg-pumpkin-dark hover:border-pumpkin-dark'
 		: isBannerPage
-		? 'border-white/20 bg-white/12 text-white hover:bg-white hover:text-stone-900'
-		: 'border-[#eb6608] bg-[#eb6608] text-white hover:bg-[#c75500] hover:border-[#c75500]'
+		? 'border-white/20 bg-white/12 text-white hover:bg-white hover:text-charcoal-blue'
+		: 'border-pumpkin-spice bg-pumpkin-spice text-white hover:bg-pumpkin-dark hover:border-pumpkin-dark'
 	const mobilePanelTone = isScrolled
-		? 'border-stone-200 bg-white text-stone-800'
+		? 'border-pale-slate bg-white text-charcoal-blue'
 		: isBannerPage
 		? 'border-white/15 bg-[linear-gradient(180deg,rgba(13,13,13,0.92),rgba(24,24,24,0.88))] text-white'
-		: 'border-stone-200 bg-white text-stone-800'
+		: 'border-pale-slate bg-white text-charcoal-blue'
 	const mobileNavItemTone = isScrolled
-		? 'hover:bg-stone-100 hover:text-[#eb6608]'
+		? 'hover:bg-stone-100 hover:text-pumpkin-spice'
 		: isBannerPage
-		? 'hover:bg-white/10 hover:text-[#eb6608]'
-		: 'hover:bg-stone-100 hover:text-[#eb6608]'
+		? 'hover:bg-white/10 hover:text-pumpkin-spice'
+		: 'hover:bg-stone-100 hover:text-pumpkin-spice'
 
 	return (
 		<header 
@@ -89,10 +89,10 @@ export function Header() {
 				<div
 					className={`flex items-center justify-between gap-4 px-4 py-3 transition-all duration-300 ease-in-out sm:px-5 lg:px-7 lg:py-4 ${
 						isScrolled
-							? 'border border-stone-200/80 bg-white/95 text-stone-700 shadow-[0_8px_30px_rgba(0,0,0,0.12)] backdrop-blur'
+							? 'border border-pale-slate/30 bg-white/95 text-charcoal-blue shadow-[0_8px_30px_rgba(0,0,0,0.12)] backdrop-blur'
 							: isBannerPage
 							? 'border-white/12 bg-transparent text-white backdrop-blur-lg'
-							: 'border border-stone-200/80 bg-white/92 text-stone-700 shadow-[0_8px_30px_rgba(0,0,0,0.12)]'
+							: 'border border-pale-slate/30 bg-white/92 text-charcoal-blue shadow-[0_8px_30px_rgba(0,0,0,0.12)]'
 					}`}
 				>
 					<div className="w-[112px] shrink-0 sm:w-[132px] lg:w-[168px]" whileHover={{ scale: 1.04 }}>
@@ -113,12 +113,12 @@ export function Header() {
 									{({ isActive }) => (
 										<span
 										className={`group relative inline-flex items-center py-2 transition ${
-											isActive ? 'text-[#eb6608]' : 'hover:text-[#eb6608]'
+											isActive ? 'text-pumpkin-spice' : 'hover:text-pumpkin-spice'
 										}`}
 										>
 										{item.label}
 										<span
-											className={`absolute inset-x-0 -bottom-0.5 h-px bg-[#eb6608] transition duration-300 ${
+											className={`absolute inset-x-0 -bottom-0.5 h-px bg-pumpkin-spice transition duration-300 ${
 											isActive ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'
 											}`}
 										/>
@@ -188,7 +188,7 @@ export function Header() {
 											className={({ isActive }) =>
 												`flex items-center justify-between rounded-2xl px-4 py-3 font-montserrat text-sm font-medium uppercase tracking-[0.12em] transition ${
 													isActive
-														? 'bg-[#eb6608] text-white shadow-[0_10px_24px_rgba(235,102,8,0.28)]'
+													? 'bg-pumpkin-spice text-white shadow-[0_10px_24px_rgba(253,107,1,0.28)]'
 														: mobileNavItemTone
 												}`
 											}
@@ -205,7 +205,7 @@ export function Header() {
 							<a
 								href={`mailto:${contactInfo.email}`}
 								onClick={() => setIsMenuOpen(false)}
-								className="inline-flex h-12 items-center justify-center rounded-full bg-[#eb6608] px-5 font-montserrat text-sm font-medium uppercase tracking-[0.12em] text-white transition hover:bg-[#c75500]"
+								className="inline-flex h-12 items-center justify-center rounded-full bg-pumpkin-spice px-5 font-montserrat text-sm font-medium uppercase tracking-[0.12em] text-white transition hover:bg-pumpkin-dark"
 							>
 								Email Us
 							</a>
