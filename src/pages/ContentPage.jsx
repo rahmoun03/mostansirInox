@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-export function ContentPage({ title, description }) {
+export default function ContentPage({ title, description }) {
   return (
     <main className="min-h-[calc(100vh-280px)] px-5 pb-20 pt-36 sm:px-8 lg:px-[120px] lg:pt-44">
       <div className="mx-auto max-w-5xl">
@@ -16,7 +16,7 @@ export function ContentPage({ title, description }) {
         <div className="mt-10">
           <Link
             to="/"
-            className="inline-flex items-center rounded-full bg-[#eb6608] px-6 py-3 font-montserrat text-sm font-medium uppercase tracking-[0.14em] text-white transition hover:bg-[#c75500]"
+            className="inline-flex items-center rounded-full bg-[pumpkin-spice] px-6 py-3 font-montserrat text-sm font-medium uppercase tracking-[0.14em] text-white transition hover:bg-[pumpkin-dark]"
           >
             Back to Home
           </Link>

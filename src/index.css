@@ -3,7 +3,16 @@
 
 :root {
   font-family: "Montserrat", sans-serif;
-  color: #4f4e4e;
+  
+  /* Logo Color Palette */
+  --charcoal-blue: #2F3849;
+  --jet-black: #2E3745;
+  --pale-slate: #C3C7CB;
+  --taupe: #806C67;
+  --pumpkin-spice: #FD6B01;
+  --pumpkin-dark: #CC5600;
+  
+  color: var(--charcoal-blue);
   background: #ffffff;
   font-synthesis: none;
   text-rendering: optimizeLegibility;

@@ -4,7 +4,7 @@ import { ProjectsSection } from '../components/sections/ProjectsSection'
 import { ServicesSection } from '../components/sections/ServicesSection'
 import { WhyChooseUsSection } from '../components/sections/WhyChooseUsSection'
 
-export function HomePage() {
+export default function HomePage() {
   return (
     <main>
       <HeroSection />
