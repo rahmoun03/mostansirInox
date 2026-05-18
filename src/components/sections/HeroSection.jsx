@@ -33,7 +33,7 @@ export function HeroSection() {
 				<div className="max-w-2xl">
 					
 					{/* Eyebrow */}
-					<p className="text-sm font-medium uppercase tracking-[0.3em] text-[#eb6608]">
+					<p className="text-sm font-medium uppercase tracking-[0.3em] text-[#FD6B01]">
 						{heroContent.eyebrow}
 					</p>
 
@@ -59,7 +59,7 @@ export function HeroSection() {
 							href={whatsappHref}
 							target="_blank"
 							rel="noreferrer"
-							className="inline-flex items-center justify-center rounded-full bg-[#eb6608] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#c75500]"
+							className="inline-flex items-center justify-center rounded-full bg-[#FD6B01] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#CC5600]"
 						>
 							Demander un devis
 						</a>

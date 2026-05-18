@@ -37,19 +37,19 @@ export function ServicesSection() {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.1 }}
-      className="bg-stone-50 py-20"
+      className="bg-jet-black py-20"
     >
       <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
         
         {/* Header */}
         <motion.div variants={fadeUp} className="max-w-2xl">
-          <p className="text-sm uppercase tracking-[0.3em] text-[#eb6608]">
+          <p className="text-sm uppercase tracking-[0.3em] text-pumpkin-spice">
             Nos Services
           </p>
-          <h2 className="mt-4 text-3xl font-bold text-stone-900 sm:text-4xl">
+          <h2 className="mt-4 text-3xl font-bold text-white sm:text-4xl">
             Des solutions inox adaptées à vos besoins
           </h2>
-          <p className="mt-4 text-stone-600">
+          <p className="mt-4 text-pale-slate/80">
             Nous concevons et réalisons des structures inox sur mesure avec un haut niveau de finition et de qualité.
           </p>
         </motion.div>
@@ -69,13 +69,13 @@ export function ServicesSection() {
               initial="hidden"
               whileInView="visible"
               // viewport={{ once: true, amount: 0.1 }}
-              className="group rounded-2xl border border-stone-200 p-6 transition hover:border-[#eb6608] hover:shadow-lg cursor-pointer"
+              className="group rounded-2xl border border-pale-slate/20 p-6 transition hover:border-pumpkin-spice hover:shadow-lg cursor-pointer bg-charcoal-blue/50"
               onClick={() => navigate('/services')}
             >
-              <h3 className="text-lg font-semibold text-stone-900 group-hover:text-[#eb6608]">
+              <h3 className="text-lg font-semibold text-white group-hover:text-pumpkin-spice">
                 {service.title}
               </h3>
-              <p className="mt-3 text-sm text-stone-600">
+              <p className="mt-3 text-sm text-pale-slate/70">
                 {service.desc}
               </p>
             </motion.div>

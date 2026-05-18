@@ -14,9 +14,9 @@ function FooterLinkGroup({ group }) {
 					<li key={link.label}>
 						<Link
 							to={link.path}
-							className="group inline-flex items-center gap-2 text-sm text-white/70 transition hover:text-[#eb6608]"
+							className="group inline-flex items-center gap-2 text-sm text-white/70 transition hover:text-[pumpkin-spice]"
 						>
-							<span className="h-1 w-1 rounded-full bg-white/30 transition group-hover:bg-[#eb6608]" />
+							<span className="h-1 w-1 rounded-full bg-white/30 transition group-hover:bg-[pumpkin-spice]" />
 							{link.label}
 						</Link>
 					</li>
@@ -33,9 +33,9 @@ function FooterLinkGroup({ group }) {
 							<li key={link.label}>
 								<Link
 									to={link.path}
-									className="group inline-flex items-center gap-2 text-sm text-white/70 transition hover:text-[#eb6608]"
+									className="group inline-flex items-center gap-2 text-sm text-white/70 transition hover:text-[pumpkin-spice]"
 								>
-									<span className="h-1 w-1 rounded-full bg-white/30 transition group-hover:bg-[#eb6608]" />
+									<span className="h-1 w-1 rounded-full bg-white/30 transition group-hover:bg-[pumpkin-spice]" />
 									{link.label}
 								</Link>
 							</li>
@@ -50,8 +50,8 @@ function FooterLinkGroup({ group }) {
 function QuickAction({ action }) {
 	const tone =
 		action.variant === 'primary'
-			? 'bg-[#eb6608] text-white hover:bg-[#c75500]'
-			: 'border border-white/20 text-white hover:border-[#eb6608] hover:text-[#eb6608]'
+			? 'bg-[pumpkin-spice] text-white hover:bg-[pumpkin-dark]'
+			: 'border border-white/20 text-white hover:border-[pumpkin-spice] hover:text-[pumpkin-spice]'
 
 	return (
 		<a
@@ -112,14 +112,14 @@ export function Footer() {
 
 							<a
 								href={`mailto:${contactInfo.email}`}
-								className="mt-4 block text-sm text-[#eb6608] hover:text-[#c75500]"
+								className="mt-4 block text-sm text-[pumpkin-spice] hover:text-[pumpkin-dark]"
 							>
 								{contactInfo.email}
 							</a>
 
 							<a
 								href={`tel:${contactInfo.phone}`}
-								className="mt-2 block text-sm text-white/70 hover:text-[#eb6608]"
+								className="mt-2 block text-sm text-white/70 hover:text-[pumpkin-spice]"
 							>
 								{contactInfo.phone}
 							</a>

@@ -29,18 +29,18 @@ export function ProjectsSection() {
 
 
   return (
-    <section className="bg-stone-50 py-20">
+    <section className="bg-jet-black py-20">
       <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
 
         {/* Header */}
         <div className="max-w-2xl">
-          <p className="text-sm uppercase tracking-[0.3em] text-[#eb6608]">
+          <p className="text-sm uppercase tracking-[0.3em] text-pumpkin-spice">
             Nos Réalisations
           </p>
-          <h2 className="mt-4 text-3xl font-bold text-stone-900 sm:text-4xl">
+          <h2 className="mt-4 text-3xl font-bold text-white sm:text-4xl">
             Découvrez nos projets récents
           </h2>
-          <p className="mt-4 text-stone-600">
+          <p className="mt-4 text-pale-slate/70">
             Chaque projet est réalisé avec précision et souci du détail pour garantir un résultat de haute qualité.
           </p>
         </div>
@@ -77,7 +77,7 @@ export function ProjectsSection() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.97 }}
             href="/realisations"
-            className="inline-flex items-center justify-center rounded-full bg-[#eb6608] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#c75500]"
+            className="inline-flex items-center justify-center rounded-full bg-pumpkin-spice px-6 py-3 text-sm font-semibold text-white transition hover:bg-pumpkin-dark"
           >
             Voir tous les projets
           </a>

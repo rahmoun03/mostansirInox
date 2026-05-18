@@ -79,7 +79,7 @@ export default function RealisationsPage() {
       : projects.filter((project) => project.category === activeCategory)
 
   return (
-    <main className="bg-stone-50 text-stone-900">
+    <main className="bg-jet-black text-white">
 
       {/* HERO */}
       <section className="relative isolate overflow-hidden">
@@ -100,7 +100,7 @@ export default function RealisationsPage() {
               transition={{ duration: 0.9 }}
               className="max-w-3xl"
             >
-              <p className="font-montserrat text-sm font-semibold uppercase tracking-[0.3em] text-[#eb6608]">
+              <p className="font-montserrat text-sm font-semibold uppercase tracking-[0.3em] text-[pumpkin-spice]">
                 NOS RÉALISATIONS
               </p>
 
@@ -128,15 +128,15 @@ export default function RealisationsPage() {
             whileInView="visible"
             viewport={{ once: true }}
           >
-            <p className="font-montserrat text-sm font-semibold uppercase tracking-[0.24em] text-[#eb6608]">
+            <p className="font-montserrat text-sm font-semibold uppercase tracking-[0.24em] text-[pumpkin-spice]">
               SAVOIR-FAIRE & QUALITÉ
             </p>
 
-            <h2 className="mt-5 font-lato text-4xl font-black uppercase leading-tight text-stone-900 sm:text-5xl">
+            <h2 className="mt-5 font-lato text-4xl font-black uppercase leading-tight text-white sm:text-5xl">
               Chaque Détail Compte
             </h2>
 
-            <p className="mt-6 font-montserrat text-base leading-8 text-stone-600">
+            <p className="mt-6 font-montserrat text-base leading-8 text-pale-slate/70">
               Chaque projet est conçu avec précision, élégance et souci du détail
               afin d’offrir des réalisations inox durables et haut de gamme.
             </p>
@@ -158,8 +158,8 @@ export default function RealisationsPage() {
                 onClick={() => setActiveCategory(category)}
                 className={`rounded-full border px-6 py-3 font-montserrat text-sm font-semibold uppercase tracking-[0.12em] transition duration-300 ${
                   isActive
-                    ? 'border-[#eb6608] bg-[#eb6608] text-white shadow-lg'
-                    : 'border-stone-200 bg-white text-stone-700 hover:border-[#eb6608] hover:text-[#eb6608]'
+                    ? 'border-[pumpkin-spice] bg-[pumpkin-spice] text-white shadow-lg'
+                    : 'border-pale-slate/20 bg-charcoal-blue/50 text-white hover:border-pumpkin-spice hover:text-pumpkin-spice'
                 }`}
               >
                 {category}
@@ -184,7 +184,7 @@ export default function RealisationsPage() {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.08 }}
                 whileHover={{ y: -8 }}
-                className="group overflow-hidden rounded-[30px] bg-white shadow-[0_20px_60px_rgba(0,0,0,0.06)]"
+                className="group overflow-hidden rounded-[30px] bg-charcoal-blue/50 shadow-[0_20px_60px_rgba(0,0,0,0.06)]"
               >
                 <div className="relative overflow-hidden">
 
@@ -198,7 +198,7 @@ export default function RealisationsPage() {
 
                   <div className="absolute bottom-0 left-0 w-full p-6">
 
-                    <span className="inline-flex rounded-full bg-[#eb6608] px-4 py-2 font-montserrat text-xs font-semibold uppercase tracking-[0.14em] text-white">
+                    <span className="inline-flex rounded-full bg-[pumpkin-spice] px-4 py-2 font-montserrat text-xs font-semibold uppercase tracking-[0.14em] text-white">
                       {project.category}
                     </span>
 
@@ -242,7 +242,7 @@ export default function RealisationsPage() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <p className="font-montserrat text-sm font-semibold uppercase tracking-[0.24em] text-[#eb6608]">
+            <p className="font-montserrat text-sm font-semibold uppercase tracking-[0.24em] text-[pumpkin-spice]">
               PROJET SIGNATURE
             </p>
 
@@ -266,9 +266,9 @@ export default function RealisationsPage() {
               ].map((item) => (
                 <div
                   key={item}
-                  className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 p-4"
+                  className="flex items-center gap-3 rounded-2xl border border-white/10 bg-charcoal-blue/50/5 p-4"
                 >
-                  <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#eb6608]/20 text-[#eb6608]">
+                  <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[pumpkin-spice]/20 text-[pumpkin-spice]">
                     ✓
                   </span>
 
@@ -297,15 +297,15 @@ export default function RealisationsPage() {
             whileInView="visible"
             viewport={{ once: true }}
           >
-            <p className="font-montserrat text-sm font-semibold uppercase tracking-[0.24em] text-[#eb6608]">
+            <p className="font-montserrat text-sm font-semibold uppercase tracking-[0.24em] text-[pumpkin-spice]">
               VOTRE PROJET COMMENCE ICI
             </p>
 
-            <h2 className="mt-6 font-lato text-4xl font-black uppercase leading-tight text-stone-900 sm:text-5xl">
+            <h2 className="mt-6 font-lato text-4xl font-black uppercase leading-tight text-white sm:text-5xl">
               Vous Avez Un Projet ?
             </h2>
 
-            <p className="mx-auto mt-6 max-w-2xl font-montserrat text-base leading-8 text-stone-600">
+            <p className="mx-auto mt-6 max-w-2xl font-montserrat text-base leading-8 text-pale-slate/70">
               Parlons ensemble de votre future réalisation inox et créons
               une solution moderne adaptée à vos besoins.
             </p>
@@ -316,14 +316,14 @@ export default function RealisationsPage() {
                 href="https://wa.me/212680492169"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex h-14 items-center justify-center rounded-full bg-[#eb6608] px-8 font-montserrat text-sm font-semibold uppercase tracking-[0.14em] text-white transition duration-300 hover:scale-[1.03] hover:bg-[#c75500]"
+                className="inline-flex h-14 items-center justify-center rounded-full bg-[pumpkin-spice] px-8 font-montserrat text-sm font-semibold uppercase tracking-[0.14em] text-white transition duration-300 hover:scale-[1.03] hover:bg-[pumpkin-dark]"
               >
                 WhatsApp
               </a>
 
               <Link
                 to="/contact"
-                className="inline-flex h-14 items-center justify-center rounded-full border border-stone-300 px-8 font-montserrat text-sm font-semibold uppercase tracking-[0.14em] text-stone-900 transition duration-300 hover:border-[#eb6608] hover:bg-[#eb6608] hover:text-white"
+                className="inline-flex h-14 items-center justify-center rounded-full border border-stone-300 px-8 font-montserrat text-sm font-semibold uppercase tracking-[0.14em] text-white transition duration-300 hover:border-pumpkin-spice hover:bg-[pumpkin-spice] hover:text-white"
               >
                 Demander Un Devis
               </Link>

@@ -106,7 +106,7 @@ export default function ServicesPage() {
               transition={{ duration: 0.9 }}
               className="max-w-3xl"
             >
-              <p className="font-montserrat text-sm font-semibold uppercase tracking-[0.3em] text-[#eb6608]">
+              <p className="font-montserrat text-sm font-semibold uppercase tracking-[0.3em] text-[pumpkin-spice]">
                 SERVICES INOX PROFESSIONNELS
               </p>
 
@@ -134,7 +134,7 @@ export default function ServicesPage() {
             whileInView="visible"
             viewport={{ once: true }}
           >
-            <p className="font-montserrat text-sm font-semibold uppercase tracking-[0.24em] text-[#eb6608]">
+            <p className="font-montserrat text-sm font-semibold uppercase tracking-[0.24em] text-[pumpkin-spice]">
               NOTRE EXPERTISE
             </p>
 
@@ -158,7 +158,7 @@ export default function ServicesPage() {
                   key={item}
                   className="flex items-center gap-3 rounded-2xl border border-stone-200 p-4"
                 >
-                  <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#eb6608]/10 text-[#eb6608]">
+                  <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[pumpkin-spice]/10 text-[pumpkin-spice]">
                     ✓
                   </span>
 
@@ -177,7 +177,7 @@ export default function ServicesPage() {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="absolute -left-6 -top-6 h-full w-full rounded-[32px] border border-[#eb6608]/20" />
+            <div className="absolute -left-6 -top-6 h-full w-full rounded-[32px] border border-[pumpkin-spice]/20" />
 
             <img
               src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200&auto=format&fit=crop"
@@ -200,7 +200,7 @@ export default function ServicesPage() {
             viewport={{ once: true }}
             className="max-w-3xl"
           >
-            <p className="font-montserrat text-sm font-semibold uppercase tracking-[0.24em] text-[#eb6608]">
+            <p className="font-montserrat text-sm font-semibold uppercase tracking-[0.24em] text-[pumpkin-spice]">
               NOS SERVICES
             </p>
 
@@ -255,7 +255,7 @@ export default function ServicesPage() {
             viewport={{ once: true }}
             className="max-w-3xl"
           >
-            <p className="font-montserrat text-sm font-semibold uppercase tracking-[0.24em] text-[#eb6608]">
+            <p className="font-montserrat text-sm font-semibold uppercase tracking-[0.24em] text-[pumpkin-spice]">
               NOTRE MÉTHODE
             </p>
 
@@ -274,7 +274,7 @@ export default function ServicesPage() {
                 transition={{ delay: index * 0.1 }}
                 className="rounded-[28px] border border-stone-200 bg-white p-8"
               >
-                <span className="font-lato text-5xl font-black text-[#eb6608]/15">
+                <span className="font-lato text-5xl font-black text-[pumpkin-spice]/15">
                   {step.number}
                 </span>
 
@@ -304,7 +304,7 @@ export default function ServicesPage() {
             whileInView="visible"
             viewport={{ once: true }}
           >
-            <p className="font-montserrat text-sm font-semibold uppercase tracking-[0.24em] text-[#eb6608]">
+            <p className="font-montserrat text-sm font-semibold uppercase tracking-[0.24em] text-[pumpkin-spice]">
               DÉMARREZ VOTRE PROJET
             </p>
 
@@ -323,14 +323,14 @@ export default function ServicesPage() {
                 href="https://wa.me/212680492169"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex h-14 items-center justify-center rounded-full bg-[#eb6608] px-8 font-montserrat text-sm font-semibold uppercase tracking-[0.14em] text-white transition duration-300 hover:scale-[1.03] hover:bg-[#c75500]"
+                className="inline-flex h-14 items-center justify-center rounded-full bg-[pumpkin-spice] px-8 font-montserrat text-sm font-semibold uppercase tracking-[0.14em] text-white transition duration-300 hover:scale-[1.03] hover:bg-[pumpkin-dark]"
               >
                 WhatsApp
               </a>
 
               <Link
                 to="/contact"
-                className="inline-flex h-14 items-center justify-center rounded-full border border-white/20 px-8 font-montserrat text-sm font-semibold uppercase tracking-[0.14em] text-white transition duration-300 hover:border-[#eb6608] hover:bg-[#eb6608]"
+                className="inline-flex h-14 items-center justify-center rounded-full border border-white/20 px-8 font-montserrat text-sm font-semibold uppercase tracking-[0.14em] text-white transition duration-300 hover:border-[pumpkin-spice] hover:bg-[pumpkin-spice]"
               >
                 Demander Un Devis
               </Link>
